@@ -8,7 +8,7 @@ iter = 0
 while True:
     iter = iter + 1
     guess = input("Enter your guess or enter 'quit'!\n")
-    if lower(guess) == "quit":
+    if guess == "quit":
         break
     try:
         guess = int(guess)
