@@ -30,15 +30,17 @@ def scoring(check):
     else:           # Meaning the user is incorret
         return -1
 
+# Creates a list of operations to choose from.
 operations = ["add", "substract", "multiply", "divide"]
+
 score = 0
 check = 0
 
 for i in range(10):
     num1 = random.randint(10, 50)
     num2 = random.randint(10, 50)
-    random.shuffle(operations)
-    if operations[0] == "add":
+    random.shuffle(operations)      # This function shuffles up a list. 
+    if operations[0] == "add":      # operations[0] refers to the first element of the operations list.
         print("Question", i + 1, ":", "What is", num1, "+", num2,"?")
         sum = add(num1, num2)
     elif operations[0] == "substract":
